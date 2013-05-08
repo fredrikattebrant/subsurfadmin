@@ -1,0 +1,13 @@
+
+1. Export new member emails from Thunderbird (creates 1 .eml file/member)
+2. Run run_NewMemberUtil.sh *.eml > ADD.csv
+3. Import ADD.csv into the google member spreadsheet (append to current sheet)
+4. Fill columns down (marked w grey color on row 3?) - member no, membership valid until, age etc
+
+
+
+Commands to use:
+
+../extract_from_eml.sh  -e *.eml > EMAILS
+dos2unix EMAILS
+for i in $(cat EMAILS ); do if  grep -q $i ../../medlemsreg/medlemsstatus20130228/Stockholm\ Sub\ Surfers\ Medlemsregister.20130305.csv ;  then echo  $i; fi ; done > EMAILS.regged

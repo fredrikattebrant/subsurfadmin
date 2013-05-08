@@ -1,0 +1,81 @@
+X-Account-Key: account6
+X-UIDL: GmailId131cef7baadcd8c7
+X-Mozilla-Status: 0005
+X-Mozilla-Status2: 00000000
+X-Mozilla-Keys:                                                                                 
+Delivered-To: fredrik.attebrant@gmail.com
+Received: by 10.52.111.132 with SMTP id ii4cs88719vdb;
+        Mon, 15 Aug 2011 12:44:35 -0700 (PDT)
+Received: from mr.google.com ([10.224.202.138])
+        by 10.224.202.138 with SMTP id fe10mr849271qab.48.1313437475257 (num_hops = 1);
+        Mon, 15 Aug 2011 12:44:35 -0700 (PDT)
+Received: by 10.224.202.138 with SMTP id fe10mr627336qab.48.1313437475010;
+        Mon, 15 Aug 2011 12:44:35 -0700 (PDT)
+Received-SPF: softfail (google.com: best guess record for domain of transitioning apache@agis.freedback.com does not designate 195.74.36.184 as permitted sender) client-ip=195.74.36.184;
+Received: by 10.241.193.137 with POP3 id 9mf2307622qwc.37;
+        Mon, 15 Aug 2011 12:44:35 -0700 (PDT)
+X-Gmail-Fetch-Info: fredrik.attebrant@subsurfers.se 1 mail.subsurfers.se 110 fredrik.attebrant@subsurfers.se
+Return-path: <apache@agis.freedback.com>
+Envelope-to: reg@subsurfers.se
+Delivery-date: Mon, 15 Aug 2011 21:43:09 +0200
+Received: from vsp-inbound02.binero.net ([195.74.36.184] helo=mx28.webbpost.se)
+	by taz.kontrollpanelen.se with smtp (Exim 4.69)
+	(envelope-from <apache@agis.freedback.com>)
+	id 1Qt340-0000qv-OC
+	for reg@subsurfers.se; Mon, 15 Aug 2011 21:43:08 +0200
+X-Spam-Version: Binero Spamfilter
+X-Halon-ID: c7afb09b-c776-11e0-8854-005056a12c00
+X-Spam-RPD: 0
+X-Spam-SA: -6.20
+Received: from agis.freedback.com (unknown [209.85.41.143])
+	by mx28.webbpost.se (Halon Mail Gateway) with ESMTP
+	for <reg@subsurfers.se>; Mon, 15 Aug 2011 21:42:58 +0200 (CEST)
+Received: from apache by agis.freedback.com with local (Exim 4.68)
+	(envelope-from <apache@agis.freedback.com>)
+	id 1Qt33f-0007zX-9W
+	for reg@subsurfers.se; Mon, 15 Aug 2011 12:42:47 -0700
+Date: Mon, 15 Aug 2011 12:42:47 -0700
+To: reg@subsurfers.se
+From: Test <test@abc.se>
+Reply-to: Test <test@abc.se>
+Subject: Ny SSS medlem!     (Test)
+Message-ID: <e9264e6ffa256329ddaffbc617073166@www.response-o-matic.com>
+X-Priority: 3
+X-Mailer: PHPMailer [version 1.72]
+X-HTTP-Referer: http://www.subsurfers.se/bli-medlem/
+X-Submission-ID: 51956347
+X-IADB-IP: 209.85.41.135
+X-IADB-IP-REVERSE: 135.41.85.209
+X-IADB-URL: http://www.isipp.com/iadb.php
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset="UTF-8"
+
+Förnamn: Test
+
+Efternamn: Testsson
+
+Födelsedata (XXXX-XX-XX-XXXX): 1941-01-01-0123
+
+Mobilnr (07XXXXXXXX): 0765432198
+
+Gatuadress: Testgatan 11
+
+Postnummer: 11111
+
+Postadress: Testan
+
+Email: test@abc.se
+
+Välj medlemskap: 80 kr från 15 år med olycksfallsförsäkring.
+
+Extra: + 50 kr för Swedish Surfing Association medlemskap., + 50 kr för Longboard Stockholm medlemskap (inkl t-shirt!).
+
+Välj brädsport: Skateboard - Street., Skateboard - Vert., Skateboard - Backyard pools., Skateboard - Miniramp/bowlrider., Skateboard - Slalom., Skateboard - Flatland freestyle., Skateboard - Longboard cruise., Skateboard - Downhill., Skateboard - Höjdhopp/längdhopp., Snowboard - Freeride., Snowboard - Pipe., Snowboard - Big Jump., Snowboard - Snow Cross., Snowboard - Alpine., Surfing - Shortboard., Surfing - Longboard., Surfing - Bodyboard., Skimboard, Sandboard, Wakeboard, Wakeskate, Kiteboard, Windsurf, Hoverboard
+
+
+--
+Date/Time: 2011-08-15 12:42:44 PDT
+Sender IP: 213.66.76.79 [Sweden] | wdrzfmpi6ouwoq9m
+Referrer: http://www.subsurfers.se/bli-medlem/
+
