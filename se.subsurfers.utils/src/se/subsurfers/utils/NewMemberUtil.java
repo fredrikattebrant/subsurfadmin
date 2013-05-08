@@ -407,11 +407,18 @@ public class NewMemberUtil {
 		 * o Output character format (UTF8?) to get proper encoding of ÅÄÖ o
 		 * Cleanup of birthdate formats o Age calculation o more?
 		 */
+		
+		// sanity check
+		if (args.length < 1) {
+			System.err.println("!!! No arguments - aborting");
+			return;
+		}
 
 		if (args[0].equals("-d")) {
 			debugging = true;
 			debug("Enabled debug printouts");
 		}
+		
 		debug("Reading from files: " + args.length);
 		// args are filenames - one per new member
 		for (String file : args) {
