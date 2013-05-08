@@ -1,8 +1,9 @@
 #!/bin/bash
+#set -xv
 
-CODEDIR=/Users/fredrik/dev/workspaces/gae
+CODEDIR=$(dirname $(dirname $0))
 
-CLASSPATH=$CODEDIR/jhacks/bin
+CLASSPATH=$CODEDIR/bin
 
 MAINCLASS=se.subsurfers.utils.NewMemberUtil
 
