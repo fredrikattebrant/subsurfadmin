@@ -13,16 +13,16 @@ import java.util.Scanner;
 
 public class NewMemberUtil {
 
-	private static final String FIRSTNAMETOKEN = "Förnamn";
+	private static final String FIRSTNAMETOKEN = "F√∂rnamn";
 	private static final String LASTNAMETOKEN = "Efternamn";
-	private static final String BIRTHDATETOKEN = "Födelsedata (XXXX-XX-XX-XXXX)";
+	private static final String BIRTHDATETOKEN = "F√∂delsedata (XXXX-XX-XX-XXXX)";
 	private static final String MOBILETOKEN = "Mobilnr (07XXXXXXXX)";
 	private static final String STREETTOKEN = "Gatuadress";
 	private static final String POSTALTOKEN = "Postnummer";
 	private static final String CITYTOKEN = "Postadress";
 	private static final String EMAILTOKEN = "Email";
-	private static final String MEMBERSHIPTOKEN = "Välj medlemskap";
-	private static final String BOARDTOKEN = "Välj brädsport";
+	private static final String MEMBERSHIPTOKEN = "V√§lj medlemskap";
+	private static final String BOARDTOKEN = "V√§lj br√§dsport";
 	private static final String REGISTRATIONDATETOKEN = "Date/Time";
 
 	private static final String SKATEBOARDTOKEN = "Skateboard";
@@ -38,7 +38,7 @@ public class NewMemberUtil {
 	private static final String SKATEBOARD_FLATLAND_FREESTYLE = " Skateboard - Flatland freestyle.";
 	private static final String SKATEBOARD_LONGBOARD_CRUISE = " Skateboard - Longboard cruise.";
 	private static final String SKATEBOARD_DOWNHILL = " Skateboard - Downhill.";
-	private static final String SKATEBOARD_HIGH_LONG_JUMP = " Skateboard - Höjdhopp/längdhopp.";
+	private static final String SKATEBOARD_HIGH_LONG_JUMP = " Skateboard - H√∂jdhopp/l√§ngdhopp.";
 	private static final String SNOWBOARD_FREERIDE = " Snowboard - Freeride.";
 	private static final String SNOWBOARD_PIPE = " Snowboard - Pipe.";
 	private static final String SNOWBOARD_BIGJUMP = " Snowboard - Big Jump.";
@@ -320,7 +320,7 @@ public class NewMemberUtil {
 					registrationDate = value.substring(0, value.indexOf(" "));
 				} else if (token.equals(EXTRATOKEN)) {
 					// extra = one or more of longboard, surf/ssa, separated by '+' - eg:
-					//Extra: + 50 kr för Swedish Surfing Association medlemskap., + 50 kr för Longboard Stockholm medlemskap (inkl t-shirt!).
+					//Extra: + 50 kr f√∂r Swedish Surfing Association medlemskap., + 50 kr f√∂r Longboard Stockholm medlemskap (inkl t-shirt!).
 					String SSASTRING = "Swedish Surfing Association";
 					String LONGBOARDSTRING = "Longboard Stockholm";
 					int extraFee = 0;
@@ -404,8 +404,9 @@ public class NewMemberUtil {
 		/*
 		 * TODO:
 		 * 
-		 * o Output character format (UTF8?) to get proper encoding of ÅÄÖ o
+		 * o Output character format (UTF8?) to get proper encoding of √•√§√∂ o
 		 * Cleanup of birthdate formats o Age calculation o more?
+		 * On Mac:  ÔøΩÔøΩÔøΩ instead of √•√§√∂ ???
 		 */
 		
 		// sanity check
@@ -441,7 +442,8 @@ public class NewMemberUtil {
 						String newLine = "";
 						while (scanner.hasNext()) {
 							String line = scanner.nextLine();
-							if (line.startsWith("Förnamn:")) {
+							debug("Line: [" + line + "]");
+							if (line.startsWith("F√∂rnamn:")) {
 								foundStart = true;
 							}
 							if (foundStart) {
