@@ -4,9 +4,11 @@
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="/home/attebrantx/tmp/gdata/gdata-src/gdata/java/lib/gdata-spreadsheet-3.0.jar"/>
-	<classpathentry kind="lib" path="lib/guava-14.0.1.jar"/>
-	<classpathentry kind="lib" path="/home/attebrantx/tmp/gdata/oauth2/google-api-services-oauth2-v2-rev37-1.14.2-beta.jar"/>
-	<classpathentry kind="lib" path="/home/attebrantx/tmp/gdata/oauth2/libs/google-oauth-client-java7-1.14.1-beta.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/gdata-spreadsheet-3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/guava-14.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/google-api-services-oauth2-v2-rev37-1.14.2-beta.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/google-oauth-client-java7-1.14.1-beta.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/gdata-core-1.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/google-collect-1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
