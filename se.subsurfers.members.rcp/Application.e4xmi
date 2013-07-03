@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_Mi-kkN9aEeKjUIFfYeX78A" elementId="org.eclipse.e4.ide.application" bindingContexts="_Mi_LoN9aEeKjUIFfYeX78A">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_Mi-kkd9aEeKjUIFfYeX78A" label="se.subsurfers.members.rcp" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_Mi_ytN9aEeKjUIFfYeX78A">
+      <children xsi:type="advanced:Perspective" xmi:id="_Mi_ytd9aEeKjUIFfYeX78A">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_Mi_ytt9aEeKjUIFfYeX78A">
+          <children xsi:type="basic:PartStack" xmi:id="_Mi_yt99aEeKjUIFfYeX78A">
+            <children xsi:type="basic:Part" xmi:id="_Mi_yuN9aEeKjUIFfYeX78A" contributionURI="bundleclass://se.subsurfers.members.rcp/se.subsurfers.members.rcp.parts.MembersMainPart" label="Subsurfers medlemmar"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <handlers xmi:id="_W1C8kOITEeKjUIFfYeX78A" elementId="se.subsurfers.members.rcp.handler.loginHandler" contributionURI="bundleclass://se.subsurfers.members.rcp/se.subsurfers.members.rcp.handlers.LoginHandler" command="_YCs6wN9bEeKjUIFfYeX78A"/>
+    <mainMenu xmi:id="_Mi_LsN9aEeKjUIFfYeX78A" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_Mi_Lsd9aEeKjUIFfYeX78A" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Jzg4MN9bEeKjUIFfYeX78A" elementId="se.subsurfers.members.rcp.handledmenuitem.login" label="Login" iconURI="platform:/plugin/se.subsurfers.members.rcp/icons/sample.gif" command="_YCs6wN9bEeKjUIFfYeX78A"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Mi_Lst9aEeKjUIFfYeX78A" label="Open" iconURI="platform:/plugin/se.subsurfers.members.rcp/icons/sample.gif" tooltip="" command="_Mi_Lp99aEeKjUIFfYeX78A"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Mi_ysN9aEeKjUIFfYeX78A" label="Save" iconURI="platform:/plugin/se.subsurfers.members.rcp/icons/save_edit.gif" command="_Mi_Lqt9aEeKjUIFfYeX78A"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Mi_ysd9aEeKjUIFfYeX78A" label="Quit" command="_Mi_Lo99aEeKjUIFfYeX78A"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_Mi_yst9aEeKjUIFfYeX78A" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Mi_ys99aEeKjUIFfYeX78A" label="About" command="_Mi_Lrd9aEeKjUIFfYeX78A"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_Mi_yud9aEeKjUIFfYeX78A">
+      <children xsi:type="menu:ToolBar" xmi:id="_MjAZwN9aEeKjUIFfYeX78A" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_MjAZwd9aEeKjUIFfYeX78A" iconURI="platform:/plugin/se.subsurfers.members.rcp/icons/sample.gif" command="_Mi_Lp99aEeKjUIFfYeX78A"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_MjAZwt9aEeKjUIFfYeX78A" iconURI="platform:/plugin/se.subsurfers.members.rcp/icons/save_edit.gif" command="_Mi_Lqt9aEeKjUIFfYeX78A"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_Mi_LpN9aEeKjUIFfYeX78A" elementId="se.subsurfers.members.rcp.handler.quitCommand" contributionURI="bundleclass://se.subsurfers.members.rcp/se.subsurfers.members.rcp.handlers.QuitHandler" command="_Mi_Lo99aEeKjUIFfYeX78A"/>
+  <handlers xmi:id="_Mi_LqN9aEeKjUIFfYeX78A" elementId="se.subsurfers.members.rcp.handler.openCommand" contributionURI="bundleclass://se.subsurfers.members.rcp/se.subsurfers.members.rcp.handlers.OpenHandler" command="_Mi_Lp99aEeKjUIFfYeX78A"/>
+  <handlers xmi:id="_Mi_Lq99aEeKjUIFfYeX78A" elementId="se.subsurfers.members.rcp.handler.saveCommand" contributionURI="bundleclass://se.subsurfers.members.rcp/se.subsurfers.members.rcp.handlers.SaveHandler" command="_Mi_Lqt9aEeKjUIFfYeX78A"/>
+  <handlers xmi:id="_Mi_Lrt9aEeKjUIFfYeX78A" elementId="se.subsurfers.members.rcp.handler.aboutCommand" contributionURI="bundleclass://se.subsurfers.members.rcp/se.subsurfers.members.rcp.handlers.AboutHandler" command="_Mi_Lrd9aEeKjUIFfYeX78A"/>
+  <handlers xmi:id="_dX2ooOIbEeKtSaJjepOsBw" elementId="se.subsurfers.members.rcp.handler.0" contributionURI="bundleclass://se.subsurfers.members.rcp/se.subsurfers.members.rcp.handlers.LoginHandler" command="_YCs6wN9bEeKjUIFfYeX78A"/>
+  <bindingTables xmi:id="_Mi_Lpd9aEeKjUIFfYeX78A" bindingContext="_Mi_LoN9aEeKjUIFfYeX78A">
+    <bindings xmi:id="_Mi_Lpt9aEeKjUIFfYeX78A" keySequence="M1+Q" command="_Mi_Lo99aEeKjUIFfYeX78A"/>
+    <bindings xmi:id="_Mi_Lqd9aEeKjUIFfYeX78A" keySequence="M1+O" command="_Mi_Lp99aEeKjUIFfYeX78A"/>
+    <bindings xmi:id="_Mi_LrN9aEeKjUIFfYeX78A" keySequence="M1+S" command="_Mi_Lqt9aEeKjUIFfYeX78A"/>
+    <bindings xmi:id="_Mi_Lr99aEeKjUIFfYeX78A" keySequence="M1+A" command="_Mi_Lrd9aEeKjUIFfYeX78A"/>
+    <bindings xmi:id="_BAIawOI_EeKXwsFQ6N9NdA" elementId="se.subsurfers.members.rcp.keybinding.login" keySequence="M1+L" command="_YCs6wN9bEeKjUIFfYeX78A"/>
+  </bindingTables>
+  <rootContext xmi:id="_Mi_LoN9aEeKjUIFfYeX78A" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_Mi_Lod9aEeKjUIFfYeX78A" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_Mi_Lot9aEeKjUIFfYeX78A" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_Mi_Lo99aEeKjUIFfYeX78A" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_Mi_Lp99aEeKjUIFfYeX78A" elementId="se.subsurfers.members.rcp.open" commandName="openCommand"/>
+  <commands xmi:id="_Mi_Lqt9aEeKjUIFfYeX78A" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_Mi_Lrd9aEeKjUIFfYeX78A" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <commands xmi:id="_YCs6wN9bEeKjUIFfYeX78A" elementId="se.subsurfers.members.rcp.login" commandName="loginCommand"/>
+  <addons xmi:id="_Mi-kkt9aEeKjUIFfYeX78A" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_Mi-kk99aEeKjUIFfYeX78A" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_Mi-klN9aEeKjUIFfYeX78A" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_Mi-kld9aEeKjUIFfYeX78A" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_Mi-klt9aEeKjUIFfYeX78A" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_Mi-kl99aEeKjUIFfYeX78A" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_Mi-kmN9aEeKjUIFfYeX78A" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
