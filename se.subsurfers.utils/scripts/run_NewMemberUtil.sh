@@ -1,9 +1,15 @@
 #!/bin/bash
 #set -xv
 
-CODEDIR=$(dirname $(dirname $0))
+if [ -z "$CODEDIR" ]
+then
+	CODEDIR=$HOME/git/subsurfadmin/se.subsurfers.utils
+	CLASSPATH=$CODEDIR/bin
+else
+	CLASSPATH=$CODEDIR/bin
+fi
 
-CLASSPATH=$CODEDIR/bin
+
 
 MAINCLASS=se.subsurfers.utils.NewMemberUtil
 

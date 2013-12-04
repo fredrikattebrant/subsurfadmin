@@ -187,32 +187,43 @@ public class NewMemberUtil {
 					value = value.trim().replace(" ", "");
 					value = value.trim().replace("/", ""); // handle morons who use "/" as delimiter
 
-					if (value.length() == 6) {
-						// YYMMDD
-						String year = yy2yyyy(value.substring(0, 2));
-						int y = new Integer(year);
-						int m = new Integer(value.substring(2, 4));
-						int d = new Integer(value.substring(4, 6));
-						formatter.format("%04d-%02d-%02d", y, m, d);
-						birthdate = birthDateSb.toString();
+					debug("Birtdate to be parsed: [" + value + "]");
+					// ensure it consits only of numbers
+					boolean isParsable = false;
+					try {
+					    Long.parseLong(value);
+					    isParsable = true;
+					} catch (NumberFormatException e) {
+					}
+                    if (isParsable) {
+                        if (value.length() == 6) {
+                            // YYMMDD
+                            String year = yy2yyyy(value.substring(0, 2));
+                            int y = new Integer(year);
+                            int m = new Integer(value.substring(2, 4));
+                            int d = new Integer(value.substring(4, 6));
+                            formatter.format("%04d-%02d-%02d", y, m, d);
+                            birthdate = birthDateSb.toString();
 
-					} else if (value.length() == 8 || value.length() == 12) {
-						// YYYYMMDD or YYYYMMDDNNNN
-						int y = new Integer(value.substring(0, 4));
-						int m = new Integer(value.substring(4, 6));
-						int d = new Integer(value.substring(6, 8));
-						formatter.format("%04d-%02d-%02d", y, m, d);
-						birthdate = birthDateSb.toString();
+                        } else if (value.length() == 8 || value.length() == 12) {
+                            // YYYYMMDD or YYYYMMDDNNNN
+                            int y = new Integer(value.substring(0, 4));
+                            int m = new Integer(value.substring(4, 6));
+                            int d = new Integer(value.substring(6, 8));
+                            formatter.format("%04d-%02d-%02d", y, m, d);
+                            birthdate = birthDateSb.toString();
 
-					} else if (value.length() == 10) {
-						// YYMMDD-NNNN
-						String year = yy2yyyy(value.substring(0, 2));
-						int y = new Integer(year);
-						int m = new Integer(value.substring(2, 4));
-						int d = new Integer(value.substring(4, 6));
-						formatter.format("%04d-%02d-%02d", y, m, d);
-						birthdate = birthDateSb.toString();
-					} else {
+                        } else if (value.length() == 10) {
+                            // YYMMDD-NNNN
+                            String year = yy2yyyy(value.substring(0, 2));
+                            int y = new Integer(year);
+                            int m = new Integer(value.substring(2, 4));
+                            int d = new Integer(value.substring(4, 6));
+                            formatter.format("%04d-%02d-%02d", y, m, d);
+                            birthdate = birthDateSb.toString();
+                        }
+                    }
+					if (!isParsable){
 						System.err.println("*** Konstigt personnummer: "
 								+ value + " - " + firstname + ", " + lastname);
 					}
