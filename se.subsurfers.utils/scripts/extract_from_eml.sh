@@ -15,6 +15,9 @@ function usage()
 		-g gata
 		-p postnummer
 		-s stad
+		-b personnummer/födelsedatum
+		-k medlemskap
+		-S brädsport
 
 	Dumpar vald info från *.eml
 
@@ -35,6 +38,12 @@ function append()
 keys=""
 col=2
 field="-F:"
+
+# default - no args - dump all
+if [ $# -eq 0 ]
+then
+	set -- -e -m -f -l -g -p -s -b -k -S
+fi
 
 while [ $# -gt 0 ]
 do
@@ -74,6 +83,21 @@ do
 		key="Postadress:"
 		shift
 		;;
+	-b*)
+		#extract birtdate/personnummer
+		key="Födelsedata \(XXXX-XX-XX-XXXX\):"
+		shift
+		;;
+	-k*)
+		#extract membership kind
+		key="Välj medlemskap:"
+		shift
+		;;
+	-S*)
+		#extract sport
+		key="Välj brädsport:"
+		shift
+		;;
 	*)
 		usage
 		exit 1
@@ -82,9 +106,10 @@ do
 
   keys="$(append "${keys}" "${key}")"
 done
-
+echo KEYS: $keys
 for i in *.eml
 do
 	result="$(egrep -h "$keys" "$i" | pcol $field $col)"
 	echo "$result"
+	echo
 done
