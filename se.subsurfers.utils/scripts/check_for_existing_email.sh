@@ -33,8 +33,8 @@ old_email_file=$2
 
 for i in $(cat $new_email_file | grep @)
 do
-	#echo "Checking [$i] ..."
-	if grep -q "$i" $old_email_file
+	#echo "Checking $i ..."
+	if grep -q -i "$i" $old_email_file
 	then 
 		echo "Exists: $i"
 		if [ "$PROMPT" = "yes" ]

@@ -18,6 +18,7 @@ function usage()
 		-b personnummer/födelsedatum
 		-k medlemskap
 		-S brädsport
+		-d registreringsdatum
 
 	Dumpar vald info från *.eml
 
@@ -42,7 +43,7 @@ field="-F:"
 # default - no args - dump all
 if [ $# -eq 0 ]
 then
-	set -- -e -m -f -l -g -p -s -b -k -S
+	set -- -e -m -f -l -g -p -s -b -k -S -d
 fi
 
 while [ $# -gt 0 ]
@@ -96,6 +97,11 @@ do
 	-S*)
 		#extract sport
 		key="Välj brädsport:"
+		shift
+		;;
+	-d*)
+		#extract date of registration
+		key="Date/Time:"
 		shift
 		;;
 	*)
